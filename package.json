@@ -1,8 +1,12 @@
 {
-  "name": "login-page",
+  "name": "page-login",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.2",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -34,5 +38,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Made to test API's",
+  "main": "App.js",
+  "repository": "https://github.com/brnmilano/page-login",
+  "author": "Bruno Milano",
+  "license": ""
 }
