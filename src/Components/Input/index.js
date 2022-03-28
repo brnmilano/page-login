@@ -9,6 +9,7 @@ function Input({
   name,
   placeholder,
   fontSize,
+  width,
 }) {
   return (
     <div className="input-container">
@@ -17,7 +18,7 @@ function Input({
         placeholder={placeholder}
         type={type}
         id={name}
-        style={{ backgroundColor, padding, borderRadius, fontSize }}
+        style={{ backgroundColor, padding, borderRadius, fontSize, width }}
       />
     </div>
   );

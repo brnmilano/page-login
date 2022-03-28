@@ -44,7 +44,7 @@ function RightLogin() {
             Lembre de mim
           </label>
 
-          <a href="/">Esqueceu sua senha?</a>
+          <a href="/forgot-password">Esqueceu sua senha?</a>
         </div>
       </div>
 
@@ -76,7 +76,7 @@ function RightLogin() {
 
       <div className="register-container">
         <p>
-          Não tem uma conta? <a href="/">Cadastre-se</a>
+          Não tem uma conta? <a href="/register">Cadastre-se</a>
         </p>
       </div>
     </div>

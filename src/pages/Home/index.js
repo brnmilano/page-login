@@ -1,5 +1,5 @@
-import LeftImage from "../LeftImage";
-import RightLogin from "../RightLogin";
+import LeftImage from "../../Components/LeftImage";
+import RightLogin from "../../Components/RightLogin";
 import "./styles.css";
 
 function Home() {

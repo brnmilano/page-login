@@ -11,6 +11,7 @@ function Button({
   justifyContent = "center",
   alignItems = "center",
   gap,
+  width,
 }) {
   return (
     <button
@@ -25,6 +26,7 @@ function Button({
         justifyContent,
         alignItems,
         gap,
+        width,
       }}
     >
       {children}
