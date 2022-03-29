@@ -2,14 +2,29 @@ import Button from "../Button";
 import Input from "../Input";
 import "./styles.css";
 import GoogleIcon from "./Images/google-icon.png";
-import * as React from "react";
+import { useState } from "react";
+import axios from "axios";
 
 function RightLogin() {
+  const [conselho, setConselho] = useState();
+
+  function getConselho() {
+    axios
+      .get("https://api.adviceslip.com/advice/search/love")
+      .then((response) => {
+        console.log(response);
+        setConselho(response.data.slips[2]);
+      })
+      .catch((error) => {
+        console.log(error, "oi 2");
+      });
+  }
+
   return (
     <div className="right-container">
       <div className="title-container">
-        <p>Bem vindo de volta</p>
-
+        <p>Pegue seu conselho</p>
+        <p>{conselho?.advice}</p>
         <h1>Faça login na sua conta</h1>
       </div>
 
@@ -54,6 +69,7 @@ function RightLogin() {
           padding={17}
           borderRadius={5}
           fontSize={16}
+          onClick={getConselho}
         >
           Entrar
         </Button>

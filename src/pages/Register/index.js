@@ -1,19 +1,7 @@
 import "./styles.css";
-import LeftImage from "../../Components/LeftImage";
-import NewRegister from "../../Components/NewRegister";
 
 function Register() {
-  return (
-    <div className="register-container" anchorId="register">
-      <div className="content">
-        <NewRegister />
-      </div>
-
-      <div className="content">
-        <LeftImage />
-      </div>
-    </div>
-  );
+  return <div className="register-container">teste</div>;
 }
 
 export default Register;

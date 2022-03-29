@@ -12,6 +12,7 @@ function Button({
   alignItems = "center",
   gap,
   width,
+  onClick,
 }) {
   return (
     <button
@@ -28,6 +29,7 @@ function Button({
         gap,
         width,
       }}
+      onClick={onClick}
     >
       {children}
     </button>
